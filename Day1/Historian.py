@@ -1,4 +1,7 @@
 import heapq
+import time
+
+start = time.time()
 
 file = open("input.txt","r")
 
@@ -17,3 +20,7 @@ while(len(list1) > 0):
     sum += abs(elem1 - elem2)
 
 print(sum)
+
+end = time.time()
+
+print(f'it took {(end-start)* 10**3} ms')
